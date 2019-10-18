@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Green miles application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">    
+</head>  
+<body>  
+    <h2>Staff Information</h2>   
+    <form action = "/savedetails" method="post">  
+    <table>  
+        <tr><td>Name</td><td><input type="text" name="name"></td></tr>
+        <tr><td>Age</td><td><input type="text" name="name"></td></tr>  
+        <tr><td>Gender</td><td><input type="text" name="name"></td></tr>  
+        <tr><td>Company</td><td><input type="text" name="name"></td></tr>  
+        <tr><td>Occupation</td><td><input type="text" name="name"></td></tr>  
+        <tr><td>Tel</td><td><input type="text" name="name"></td></tr> 
+        <tr><td>Email</td><td><input type="email" name="email"></td></tr>  
+        <tr><td>Address</td><td><input type="text" name="address"></td></tr>  
+        <tr><td><input type="submit" value="Save"></td></tr>  
+    </table>  
+    </form>  
+</body>  
+</html>  

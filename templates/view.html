@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">    
+</head>  
+<body>  
+  
+<h3>Employee Information</h3>  
+<table border=5>  
+    <thead>  
+        <td>ID</td>  
+        <td>Name</td> 
+        <td>Age</td> 
+        <td>Gender</td>
+        <td>Company</td>
+        <td>Occupation</td>
+        <td>Tell</td>
+        <td>Email</td>  
+        <td>Address</td>  
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["id"]}}</td>  
+            <td>{{row["name"]}}</td> 
+            <td>{{row["Age"]}}</td> 
+            <td>{{row["Gender"]}}</td> 
+            <td>{{row["Company"]}}</td> 
+            <td>{{row["Occupation"]}}</td>  
+            <td>{{row["Tell"]}}</td> 
+            <td>{{row["email"]}}</td> 
+            <td>{{row["address"]}}</td>  
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html>  
